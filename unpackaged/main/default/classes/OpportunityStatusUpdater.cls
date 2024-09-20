@@ -11,20 +11,21 @@ public class OpportunityStatusUpdater {
             FROM Opportunity
             WHERE CloseDate < :today
             AND StageName NOT IN ('Closed Won', 'Closed Lost')
-            AND Amount > 10000
         ];
 
         // Bulkify the update logic to handle all the records at once
         if (!oppsToUpdate.isEmpty()) {
             for (Opportunity opp : oppsToUpdate) {
-                opp.StageName = 'Closed Won';
+                // Update the StageName to 'Closed Lost' for all past opportunities
+                opp.StageName = 'Closed Lost';
             }
 
             // Use a try-catch block for better error handling and log the error
             try {
                 update oppsToUpdate;
-                System.debug('Opportunities have been marked as Closed Won.');
+                System.debug('Opportunities updated successfully.');
             } catch (DmlException e) {
+                // Use proper logging for error handling
                 System.debug('An error occurred while updating opportunities: ' + e.getMessage());
             }
         } else {
