@@ -1,6 +1,11 @@
 public class AccountSubscriptionNumberClass {
     public static void transformAccounts(List<Account> accounts) {
         for (Account acc : accounts) {
+            // Check if the Active__c field is set to "Yes"
+            if (acc.Active__c != 'Yes') {
+                continue; // Skip this account and move to the next one
+            }
+
             String accountName = acc.Name;
             String accountNamePrefix = accountName.substring(0, 3);
 
@@ -19,10 +24,6 @@ public class AccountSubscriptionNumberClass {
                 // Combine the Account Name prefix with the remaining subscription number
                 newSubscriptionNumber = accountNamePrefix + subscriptionNumber;
 
-                // Ensure the length does not exceed 8
-                if (newSubscriptionNumber.length() > 8) {
-                    // Trim to 8 characters and add "!"
-                    newSubscriptionNumber = newSubscriptionNumber.substring(0, 8) + '!';
                 }
             }
 
