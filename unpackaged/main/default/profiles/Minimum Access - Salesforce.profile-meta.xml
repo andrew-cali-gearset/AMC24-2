@@ -7,6 +7,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Ongoing_churn_risk__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>AppointmentInvitation.AppointmentTopicId</field>
         <readable>true</readable>
     </fieldPermissions>
