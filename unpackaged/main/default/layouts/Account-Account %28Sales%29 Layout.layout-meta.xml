@@ -128,11 +128,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>DiscountRate__c</field>
+                <field>DiscountPercentage__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>DiscountPercentage__c</field>
+                <field>DiscountRate__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
