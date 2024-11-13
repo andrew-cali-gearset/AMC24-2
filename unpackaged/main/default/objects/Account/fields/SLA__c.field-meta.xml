@@ -10,7 +10,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Diamond</fullName>
+                <color>#33FFFF</color>
+                <default>false</default>
+                <label>Diamond</label>
+            </value>
+            <value>
                 <fullName>Gold</fullName>
+                <color>#FFCC33</color>
                 <default>false</default>
                 <label>Gold</label>
             </value>
