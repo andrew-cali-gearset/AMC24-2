@@ -1,0 +1,30 @@
+{
+  "Object": "SBQQ__PriceAction__c",
+  "Fields": {
+    "GearsetDisplayName": "Quantity of Tires 2x Quantity of Rims - Quote Line - SBQQ__Quantity__c",
+    "GearsetExternalId__c": "0AMECuN000000nDW0a",
+    "SBQQ__Field__c": "SBQQ__Quantity__c",
+    "SBQQ__Formula__c": "",
+    "SBQQ__Order__c": "",
+    "SBQQ__SourceLookupField__c": "",
+    "SBQQ__TargetObject__c": "Quote Line",
+    "SBQQ__ValueField__c": "",
+    "SBQQ__Value__c": ""
+  },
+  "References": [
+    {
+      "Name": "SBQQ__Rule__r",
+      "ReferencedObject": "SBQQ__PriceRule__c",
+      "ReferencedFields": {
+        "GearsetExternalId__c": "EAMdiWm000000nDY0a"
+      }
+    },
+    {
+      "Name": "SBQQ__SourceVariable__r",
+      "ReferencedObject": "SBQQ__SummaryVariable__c",
+      "ReferencedFields": {
+        "GearsetExternalId__c": "IAIlY35100000nD11a"
+      }
+    }
+  ]
+}
