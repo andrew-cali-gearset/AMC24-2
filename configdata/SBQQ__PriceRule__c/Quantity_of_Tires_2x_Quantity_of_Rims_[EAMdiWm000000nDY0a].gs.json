@@ -1,0 +1,25 @@
+{
+  "Object": "SBQQ__PriceRule__c",
+  "Fields": {
+    "GearsetDisplayName": "Quantity of Tires 2x Quantity of Rims",
+    "GearsetExternalId__c": "EAMdiWm000000nDY0a",
+    "Name": "Quantity of Tires 2x Quantity of Rims",
+    "SBQQ__Active__c": "true",
+    "SBQQ__AdvancedCondition__c": "",
+    "SBQQ__ConditionsMet__c": "All",
+    "SBQQ__ConfiguratorEvaluationEvent__c": "",
+    "SBQQ__EvaluationEvent__c": "On Calculate",
+    "SBQQ__EvaluationOrder__c": "10.0",
+    "SBQQ__LookupObject__c": "",
+    "SBQQ__TargetObject__c": "Calculator"
+  },
+  "References": [
+    {
+      "Name": "SBQQ__Product__r",
+      "ReferencedObject": "Product2",
+      "ReferencedFields": {
+        "GearsetExternalId__c": ""
+      }
+    }
+  ]
+}
