@@ -1,4 +1,4 @@
-public class ClaytonCoverage {
+public inherited sharing class ClaytonCoverage {
     
     // Simple method to perform some operations
     public static void performOperations() {
