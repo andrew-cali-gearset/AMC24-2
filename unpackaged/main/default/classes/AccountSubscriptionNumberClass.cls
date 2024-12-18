@@ -1,4 +1,5 @@
 public class AccountSubscriptionNumberClass {
+    /* This method transform the list of accounts into a list of new Subscription Number and SLA Expiration */
     public static void transformAccounts(List<Account> accounts) {
         for (Account acc : accounts) {
             String accountName = acc.Name;

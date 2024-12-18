@@ -21,6 +21,7 @@ public class CommunitiesSelfRegController {
         return password == confirmPassword;
     }
 
+    /* This method register a user in the system. */
     public PageReference registerUser() {
     
            // it's okay if password is null - we'll send the user a random password in that case

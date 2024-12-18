@@ -1,4 +1,5 @@
 public class AdvancedCascadingScheduler {
+    /* Schedule all the jobs in the current environment. */
     public void Schedule() {
         // Can't run jobs more than every hour but we can queue up 4 and ofset them by 15 minutes
         System.schedule('GenerateCascade0min', '0 0 * * * ?', new AdvancedCascadingDataManipulator());

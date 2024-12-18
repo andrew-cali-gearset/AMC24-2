@@ -6,7 +6,8 @@ public with sharing class ForgotPasswordController {
        
     public ForgotPasswordController() {}
 	
-  	public PageReference forgotPassword() {
+  	/* forgotPassword - Forgot password. */
+   public PageReference forgotPassword() {
   		boolean success = Site.forgotPassword(username);
   		PageReference pr = Page.ForgotPasswordConfirm;
   		pr.setRedirect(true);

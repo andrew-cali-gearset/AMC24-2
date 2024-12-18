@@ -7,6 +7,7 @@ public with sharing class MyProfilePageController {
     private User user;
     private boolean isEdit = false;
 
+    /* Returns the user associated with this session. */
     public User getUser() {
         return user;
     }
@@ -22,14 +23,17 @@ public with sharing class MyProfilePageController {
         }
     }
 
+    /* Returns true if the current record is an edit record. */
     public Boolean getIsEdit() {
         return isEdit;
     }
 
+    /* Edit the current node. */
     public void edit() {
         isEdit=true;
     }
 
+    /* Save the user in case of error. */
     public void save() {
         try {
             update user;
@@ -39,10 +43,12 @@ public with sharing class MyProfilePageController {
         }
     }
 
+    /* changePassword is a page reference that can be used to change the password of a user. */
     public PageReference changePassword() {
         return Page.ChangePassword;
     }
 
+    /* Cancel all user - managed tokens. */
     public void cancel() {
         isEdit=false;
         user = [SELECT id, email, username, communitynickname, timezonesidkey, languagelocalekey, firstname, lastname, phone, title,
