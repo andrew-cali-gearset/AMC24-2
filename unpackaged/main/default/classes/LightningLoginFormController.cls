@@ -4,6 +4,7 @@ global class LightningLoginFormController {
         
     }
 
+    /* Log in to the Aura server. */
     @AuraEnabled
     public static String login(String username, String password, String startUrl) {
         try{
@@ -16,18 +17,21 @@ global class LightningLoginFormController {
         }
     }
     
+    /* Returns true if username password is enabled. */
     @AuraEnabled
     public static Boolean getIsUsernamePasswordEnabled() {
         Auth.AuthConfiguration authConfig = getAuthConfig();
         return authConfig.getUsernamePasswordEnabled();
     }
 
+    /* Returns true if self registration is enabled. */
     @AuraEnabled
     public static Boolean getIsSelfRegistrationEnabled() {
         Auth.AuthConfiguration authConfig = getAuthConfig();
         return authConfig.getSelfRegistrationEnabled();
     }
 
+    /* This method returns the self registration url if the self registration is enabled. */
     @AuraEnabled
     public static String getSelfRegistrationUrl() {
         Auth.AuthConfiguration authConfig = getAuthConfig();
@@ -37,6 +41,7 @@ global class LightningLoginFormController {
         return null;
     }
 
+    /* Returns the URL of the forgot password page. */
     @AuraEnabled
     public static String getForgotPasswordUrl() {
         Auth.AuthConfiguration authConfig = getAuthConfig();
@@ -50,6 +55,7 @@ global class LightningLoginFormController {
         return authConfig;
     }
 
+    /* Demonstration of method setExperienceId */
     @AuraEnabled
     global static String setExperienceId(String expId) {
         // Return null if there is no error, else it will return the error message 

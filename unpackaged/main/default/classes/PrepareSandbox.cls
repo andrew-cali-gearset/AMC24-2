@@ -1,6 +1,7 @@
 // these need to be suppressed because following these rules cause compile error
 global class PrepareSandbox implements SandboxPostCopy // NOPMD
 {
+    /* This is the main entry point for the apex. It checks if the system admin user */
     global void runApexClass(SandboxContext context)
     {
         cleanUpSystemAdminUserEmails();

@@ -1,5 +1,6 @@
 @IsTest
  public with sharing class MicrobatchSelfRegControllerTest {
+      /* This method is used to test the self - registration controller. */
       @IsTest(SeeAllData=true)
      public static void testMicrobatchSelfRegController() {
          MicrobatchSelfRegController controller = new MicrobatchSelfRegController();

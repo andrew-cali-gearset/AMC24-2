@@ -1,11 +1,13 @@
 @isTest
 public class TestUtils {
 
+    /* Creates a system admin user. */
     public static User createSystemAdminUser(String lastName, String email) {
         Profile profile = [SELECT Id FROM Profile WHERE Name = 'System Administrator' LIMIT 1];
         return createUser(lastName, email, profile);
     }
 
+    /* Creates a standard user with the given last name and email. */
     public static User createStandardUser(String lastName, String email) {
         Profile profile = [SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce' LIMIT 1];
         return createUser(lastName, email, profile);
@@ -25,6 +27,7 @@ public class TestUtils {
         );
     }
 
+    /* Generate a random string of the specified length. */
     public static String generateRandomString(Integer len) {
         final String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
         String randStr = '';
