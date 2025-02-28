@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>v1</fullName>
+        <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Hi, I&#39;m an AI service assistant. How can I help you?</message>
+                    <messageIdentifier>1adf743a-42d9-4b25-b525-f58f1d7a9292</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>2650ac11-da1d-483b-bb32-7692a5443830</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>a001de38-6cd3-4fb5-9d5b-fb6344cfbf4a</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Welcome</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Hi! I&#39;m your helpful bot.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Sorry, it looks like something has gone wrong.</message>
+                    <messageIdentifier>15be4da4-b506-4336-b5b3-566807454d66</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>a24f5535-22ce-4248-b6e1-43516c6cf456</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>170124b1-956a-4a9d-b645-bd7cc1fd0f90</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Error_Handling</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Unfortunately, a system error occurred. Let us start again.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>One moment while I connect you to the next available service representative.</message>
+                    <messageIdentifier>893128d3-f7b5-4c9f-9e22-c9d155ddaf17</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>00417aac-7951-44fa-83b5-00c00fa0dfc3</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>f553bfde-b3f0-4eb7-bfbd-9c4d21883c00</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Transfer_To_Agent</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Transfer To Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <citationsEnabled>false</citationsEnabled>
+        <company>Gearset empowers teams with cutting-edge DevOps solutions, seamless deployment experiences, and robust version control, all backed by a commitment to reliability, innovation, and world-class customer support.</company>
+        <conversationDefinitionPlanners>
+            <genAiPlannerName>Pricing_Calculator</genAiPlannerName>
+        </conversationDefinitionPlanners>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <description>This variable may also be referred to as VerifiedCustomerId</description>
+            <developerName>VerifiedCustomerId</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>VerifiedCustomerId</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <entryDialog>Welcome</entryDialog>
+        <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+        <intentV3Enabled>false</intentV3Enabled>
+        <knowledgeActionEnabled>false</knowledgeActionEnabled>
+        <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+        <role>You&#39;re an AI Sales Team Assistant whose job is to help internal employees calculate the Gearset Yearly Subscription costs based on the number of licenses for each of Gearset&#39;s products that they require.</role>
+        <smallTalkEnabled>false</smallTalkEnabled>
+        <toneType>Casual</toneType>
+    </BotVersion>

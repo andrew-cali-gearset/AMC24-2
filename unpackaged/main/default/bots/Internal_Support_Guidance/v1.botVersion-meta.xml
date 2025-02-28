@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>v1</fullName>
+        <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Hi, I&#39;m an AI service assistant. How can I help you?</message>
+                    <messageIdentifier>e82d2d72-cf1c-40d5-8417-61d6d8eea2a5</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>a485e101-1fed-45ce-bc58-56befd8b9030</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>2c078f78-c21c-4e8c-8f6d-4dbf03775360</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Welcome</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Hi! I&#39;m your helpful bot.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Sorry, it looks like something has gone wrong.</message>
+                    <messageIdentifier>758d8cf1-b4a4-4229-8e5f-f643935eee36</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>c7e6c008-c516-4de9-9b77-6fd943ba64ba</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>c58e6db4-80b8-47e1-9e63-5fa7a912d09a</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Error_Handling</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Unfortunately, a system error occurred. Let us start again.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>One moment while I connect you to the next available service representative.</message>
+                    <messageIdentifier>829eab21-00a0-4eb0-9619-1cdb25393a79</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>14bb231a-b8b4-4697-93d7-e613b5cb0c37</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>7a189240-1ff3-4907-a1d0-b163185341ab</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Transfer_To_Agent</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Transfer To Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <citationsEnabled>false</citationsEnabled>
+        <company>Gearset empowers teams with cutting-edge DevOps solutions, seamless deployment experiences, and robust version control, all backed by a commitment to reliability, innovation, and world-class customer support.</company>
+        <conversationDefinitionPlanners>
+            <genAiPlannerName>Internal_Support_Guidance</genAiPlannerName>
+        </conversationDefinitionPlanners>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <description>This variable may also be referred to as VerifiedCustomerId</description>
+            <developerName>VerifiedCustomerId</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>VerifiedCustomerId</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <entryDialog>Welcome</entryDialog>
+        <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+        <intentV3Enabled>false</intentV3Enabled>
+        <knowledgeActionEnabled>false</knowledgeActionEnabled>
+        <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+        <role>An AI customer service agent whose job is to help internal employees with support questions or other issues to help their customers.</role>
+        <smallTalkEnabled>false</smallTalkEnabled>
+        <toneType>Casual</toneType>
+    </BotVersion>
