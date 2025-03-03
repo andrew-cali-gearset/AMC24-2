@@ -4,6 +4,9 @@
     <genAiFunctions>
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Pricing_Calculation</genAiPluginName>
+    </genAiPlugins>
     <masterLabel>Pricing Calculator</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>
