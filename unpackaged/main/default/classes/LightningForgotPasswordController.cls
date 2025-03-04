@@ -4,6 +4,7 @@ global class LightningForgotPasswordController {
 
     }
 
+    /* forgotPassword - Method for password. */
     @AuraEnabled
     public static String forgotPassword(String username, String checkEmailUrl) {
         try {
@@ -20,6 +21,7 @@ global class LightningForgotPasswordController {
         }
     }
 
+    /* A method to set the experience id of the current site. */
     @AuraEnabled
     global static String setExperienceId(String expId) {    
         // Return null if there is no error, else it will return the error message 

@@ -1,4 +1,5 @@
 public class AdvancedDataManipulatorScheduler {
+    /* Schedule all the jobs in the system. */
     public void Schedule() {
         // Can't run jobs more than every hour but we can queue up 4 and ofset them by 15 minutes
         System.schedule('Generate0min', '0 0 * * * ?', new AdvancedDataManipulator());

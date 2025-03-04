@@ -23,6 +23,7 @@ global class LightningSelfRegisterController {
         return;
     }
     
+    /* This method creates a new user in the portal. */
     @AuraEnabled
     public static String selfRegister(String firstname ,String lastname, String email, String password, String confirmPassword, String accountId, String regConfirmUrl, String extraFields, String startUrl, Boolean includePassword) {
         Savepoint sp = null;
@@ -103,6 +104,7 @@ global class LightningSelfRegisterController {
         }
     }
     
+    /* Get extra fields. */
     @AuraEnabled
     public static List<Map<String,Object>> getExtraFields(String extraFieldsFieldSet) { 
         List<Map<String,Object>> extraFields = new List<Map<String,Object>>();
@@ -122,6 +124,7 @@ global class LightningSelfRegisterController {
         return extraFields;
     }
     
+    /* This method set the experience id of the site. */
     @AuraEnabled
     global static String setExperienceId(String expId) {
         // Return null if there is no error, else it will return the error message 

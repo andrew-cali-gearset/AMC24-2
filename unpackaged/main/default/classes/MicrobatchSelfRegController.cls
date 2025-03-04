@@ -11,6 +11,7 @@ public class MicrobatchSelfRegController {
         }
     }
 
+    /* Register a new user in the network. */
     public PageReference registerUser() {
         String userName = email;
         String accountName; // to be filled by customer

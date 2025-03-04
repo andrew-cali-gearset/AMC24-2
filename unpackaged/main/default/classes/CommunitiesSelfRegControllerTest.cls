@@ -2,6 +2,7 @@
  * An apex page controller that supports self registration of users in communities that allow self registration
  */
 @IsTest public with sharing class CommunitiesSelfRegControllerTest {
+    /* This method is used to test the CommunitiesSelfRegController. */
     @IsTest(SeeAllData=true) 
     public static void testCommunitiesSelfRegController() {
         CommunitiesSelfRegController controller = new CommunitiesSelfRegController();
