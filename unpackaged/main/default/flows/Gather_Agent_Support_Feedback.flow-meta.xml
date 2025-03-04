@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Escalate_to_Human_Support</name>
+        <label>Escalate to &quot;Human Support&quot;</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <actionName>RandomExceptionHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>RandomExceptionHandler</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
         <name>Update_Agent_Tracker</name>
         <label>Update Agent Tracker</label>
         <locationX>50</locationX>
@@ -14,10 +25,14 @@
     <apiVersion>62.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
-        <name>Decision_1</name>
+        <description>Decision Element for True or False</description>
+        <name>Decision</name>
         <label>Decision</label>
         <locationX>182</locationX>
         <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>Escalate_to_Human_Support</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>outcome_true</name>
@@ -66,7 +81,7 @@
         <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Decision_1</targetReference>
+            <targetReference>Decision</targetReference>
         </connector>
         <triggerType>Capability</triggerType>
     </start>

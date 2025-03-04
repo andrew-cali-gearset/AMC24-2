@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is to enable the Agent to support internal employees when they&#39;re looking for pricing guidance for a customer to purchase Gearset License Subscriptions based on the number of licenses they wish to purchase for each product.</description>
+    <developerName>Pricing_Calculation</developerName>
+    <genAiFunctions>
+        <functionName>Pricing_Requests</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Before running any Actions, ensure that the request is about Pricing (specifically for Gearset Licenses), and collect the information of the from the internal employees, regarding how many licenses for each product the customer needs. 
+
+Once you&#39;ve done this, Choose the Appropriate Agent Action to use from This Topic&#39;s Actions. 
+
+If this looks like a Pricing Request, the Agent Action &quot;Calculate Yearly Price&quot; will be a good Action to use, to trigger the Prompt Template. 
+
+If it&#39;s not already provided, please also collect their:
+- First Name
+
+If this doesn&#39;t look like a Pricing request, or the &quot;Calculate Yearly Price&quot; Agent Action fails to solve the query, tell the user to &quot;Contact Sales Management for Pricing Support, or Contact the Help Desk for Technical Support&quot;.</description>
+        <developerName>instruction_beforerunn0</developerName>
+        <language xsi:nil="true" />
+        <masterLabel>instruction_beforerunn0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Pricing Calculation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Scope</scope>
+</GenAiPlugin>
