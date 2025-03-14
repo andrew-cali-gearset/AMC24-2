@@ -24,5 +24,5 @@ If this doesn&#39;t look like a Pricing request, or the &quot;Calculate Yearly P
     <language>en_US</language>
     <masterLabel>Pricing Calculation</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Scope</scope>
+    <scope>Guardrails: If you do not know an answer, always check for more details from the user, do not guess Scope</scope>
 </GenAiPlugin>
