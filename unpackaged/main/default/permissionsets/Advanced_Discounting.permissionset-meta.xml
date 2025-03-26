@@ -3,9 +3,4 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Advanced Discounting</label>
     <license>Salesforce</license>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.DiscountPercentage__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
 </PermissionSet>
