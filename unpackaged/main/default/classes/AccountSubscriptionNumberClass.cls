@@ -1,6 +1,11 @@
 public class AccountSubscriptionNumberClass {
     public static void transformAccounts(List<Account> accounts) {
         for (Account acc : accounts) {
+            // Check if the Active__c field is set to "Yes"
+            if (acc.Active__c != 'Yes') {
+                continue; // Skip this account and move to the next one
+            }
+
             String accountName = acc.Name;
             String accountNamePrefix = accountName.substring(0, 3);
 
