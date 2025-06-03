@@ -15,5 +15,5 @@
     <language>en_US</language>
     <masterLabel>Price Calculation</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is to assist users with calculating prices, including providing quotes, applying discounts, and calculating taxes. You should not handle any other types of inquiries or actions outside of price calculation.</scope>
+    <scope>Guardrails: If you do not know an answer, always check for more details from the user, do not guess Your job is to assist users with calculating prices, including providing quotes, applying discounts, and calculating taxes. You should not handle any other types of inquiries or actions outside of price calculation.</scope>
 </GenAiPlugin>
