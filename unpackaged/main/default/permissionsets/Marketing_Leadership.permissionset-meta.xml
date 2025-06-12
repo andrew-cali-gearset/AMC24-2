@@ -1,5 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Marketing Leadership</label>
     <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.DiscountMarketRate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.DiscountPercentage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.DiscountRate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
 </PermissionSet>
